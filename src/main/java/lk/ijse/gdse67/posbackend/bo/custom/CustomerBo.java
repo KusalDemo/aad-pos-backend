@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public interface CustomerBo extends SuperBO {
     boolean saveCustomer(CustomerDto customerDto) throws SQLException, ClassNotFoundException;
 
-    boolean updateCustomer(CustomerDto customerDto) throws SQLException;
+    boolean updateCustomer(String customerId,CustomerDto customerDto) throws SQLException;
 
     boolean deleteCustomer(String id) throws SQLException;
 

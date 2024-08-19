@@ -39,7 +39,12 @@ public class CustomerController extends HttpServlet {
     }
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response){
+        try(Writer writer=response.getWriter()){
 
+        }catch (Exception e) {
+            logger.error("Error while Getting Customer / Customers : ", e);
+            throw new RuntimeException(e);
+        }
     }
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response){
@@ -64,7 +69,27 @@ public class CustomerController extends HttpServlet {
     }
     @Override
     public void doPut(HttpServletRequest request, HttpServletResponse response){
+        try (Writer writer=response.getWriter()){
+            Jsonb jsonb = JsonbBuilder.create();
+            CustomerDto customerDto = jsonb.fromJson(request.getReader(), CustomerDto.class);
+            String pathInfo = request.getPathInfo();
+            String searchedId = (pathInfo == null || pathInfo.isEmpty()) ? "" : pathInfo.substring(1);
 
+            boolean isUpdated = customerBo.updateCustomer(searchedId,customerDto);
+            StandardResponse standardResponse;
+            if(isUpdated){
+                response.setStatus(201);
+                standardResponse = new StandardResponse(201,"Customer updated successfully",null);
+            }else{
+                response.setStatus(400);
+                standardResponse = new StandardResponse(400,"Customer update failed",null);
+            }
+            jsonb.toJson(standardResponse,writer);
+            logger.info("Customer update status : isUpdated? - "+isUpdated);
+        }catch (Exception e) {
+            logger.error("Error while updating customer : ", e);
+            throw new RuntimeException(e);
+        }
     }
     @Override
     public void doDelete(HttpServletRequest request, HttpServletResponse response){
