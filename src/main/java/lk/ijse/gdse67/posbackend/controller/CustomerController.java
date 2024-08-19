@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lk.ijse.gdse67.posbackend.bo.BoFactory;
 import lk.ijse.gdse67.posbackend.bo.custom.CustomerBo;
 import lk.ijse.gdse67.posbackend.dto.CustomerDto;
+import lk.ijse.gdse67.posbackend.util.StandardResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -46,11 +47,18 @@ public class CustomerController extends HttpServlet {
             Jsonb jsonb = JsonbBuilder.create();
             CustomerDto customerDto = jsonb.fromJson(request.getReader(), CustomerDto.class);
             boolean isSaved = customerBo.saveCustomer(customerDto);
-            /*jsonb.toJson(isSaved,writer);*/
-            response.setStatus(201);
+            StandardResponse standardResponse;
+            if(isSaved){
+                response.setStatus(201);
+                standardResponse = new StandardResponse(201,"Customer saved successfully",null);
+            }else{
+                response.setStatus(400);
+                standardResponse = new StandardResponse(400,"Customer saving failed",null);
+            }
+            jsonb.toJson(standardResponse,writer);
             logger.info("Customer saving status : isSaved? - "+isSaved);
-        }catch (Exception e){
-            logger.error("Error while saving customer : ",e);
+        }catch (Exception e) {
+            logger.error("Error while saving customer : ", e);
             throw new RuntimeException(e);
         }
     }
