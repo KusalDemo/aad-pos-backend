@@ -8,6 +8,7 @@ import lk.ijse.gdse67.posbackend.entity.Customer;
 import lk.ijse.gdse67.posbackend.util.IdGenerator;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class CustomerBoImpl implements CustomerBo {
     CustomerDao customerDao= (CustomerDao) DaoFactory.getDaoFactory().getDao(DaoFactory.DaoFactoryTypes.CUSTOMER);
@@ -30,5 +31,12 @@ public class CustomerBoImpl implements CustomerBo {
     public CustomerDto searchCustomer(String id) throws SQLException {
         Customer serachedCustomer = customerDao.search(id);
         return new CustomerDto(serachedCustomer.getName(),serachedCustomer.getEmail(),serachedCustomer.getAddress(),serachedCustomer.getBranch());
+    }
+
+    @Override
+    public List<CustomerDto> getAllCustomers() throws SQLException {
+        List<Customer> all = customerDao.getAll();
+        List<CustomerDto> customerDtos = all.stream().map(customer -> new CustomerDto(customer.getName(),customer.getEmail(),customer.getAddress(),customer.getBranch())).toList();
+        return customerDtos;
     }
 }
