@@ -21,7 +21,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(urlPatterns = "/customer",loadOnStartup = 2)
+@WebServlet(urlPatterns = "/customer/*",loadOnStartup = 2)
 public class CustomerController extends HttpServlet {
     Connection connection;
     static Logger logger = LoggerFactory.getLogger(CustomerController.class);
@@ -117,6 +117,7 @@ public class CustomerController extends HttpServlet {
         try(Writer writer=response.getWriter()){
             String pathInfo = request.getPathInfo();
             String searchedId = (pathInfo == null || pathInfo.isEmpty()) ? "" : pathInfo.substring(1);
+            System.out.println("Searched Id : "+searchedId);
             boolean isDeleted = customerBo.deleteCustomer(searchedId);
             StandardResponse standardResponse;
             if(isDeleted){
