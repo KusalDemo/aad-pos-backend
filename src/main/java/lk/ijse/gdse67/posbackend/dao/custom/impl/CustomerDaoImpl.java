@@ -22,7 +22,7 @@ public class CustomerDaoImpl implements CustomerDao {
 
     @Override
     public boolean update(Customer customer) throws SQLException {
-        return SQLUtil.execute("UPDATE customer SET name=?,email=?,address=?,branch=? WHERE id=?",customer.getName(),customer.getEmail(),customer.getAddress(),customer.getBranch(),customer.getPropertyId());
+        return SQLUtil.execute("UPDATE customer SET name=?,address=?,branch=? WHERE email=?",customer.getName(),customer.getAddress(),customer.getBranch(),customer.getEmail());
     }
 
     @Override
