@@ -23,20 +23,11 @@ import java.util.List;
 
 @WebServlet(urlPatterns = "/customer/*",loadOnStartup = 2)
 public class CustomerController extends HttpServlet {
-    Connection connection;
     static Logger logger = LoggerFactory.getLogger(CustomerController.class);
     CustomerBo customerBo=(CustomerBo) BoFactory.getBoFactory().getBo(BoFactory.BoFactoryTypes.CUSTOMER);
     @Override
     public void init() {
         logger.info("Customer Controller Initialized");
-        try {
-            var ctx=new InitialContext();
-            DataSource pool =(DataSource) ctx.lookup("java:comp/env/jdbc/aadJavaeePos");
-            this.connection = pool.getConnection();
-        } catch (NamingException|SQLException e) {
-            logger.error("Error while connecting to database : ",e);
-            throw new RuntimeException(e);
-        }
     }
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response){

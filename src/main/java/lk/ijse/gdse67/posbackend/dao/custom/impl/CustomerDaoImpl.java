@@ -17,7 +17,6 @@ public class CustomerDaoImpl implements CustomerDao {
     @Override
     public boolean save(Customer customer) throws SQLException {
         return SQLUtil.execute("INSERT INTO customer VALUES(?,?,?,?,?)",customer.getPropertyId(),customer.getName(),customer.getEmail(),customer.getAddress(),customer.getBranch());
-        /*return SQLUtil.execute("INSERT INTO customer VALUES(?,?,?,?,?)",customer.getPropertyId(),"Hello","Hello","Hello","Hello");*/
     }
 
     @Override
