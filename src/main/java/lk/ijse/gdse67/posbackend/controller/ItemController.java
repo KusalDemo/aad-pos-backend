@@ -19,7 +19,7 @@ import java.io.Writer;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 
-@WebServlet(urlPatterns = "/items",loadOnStartup = 1)
+@WebServlet(urlPatterns = "/items/*",loadOnStartup = 1)
 public class ItemController extends HttpServlet {
     ItemBo itemBo= (ItemBo) BoFactory.getBoFactory().getBo(BoFactory.BoFactoryTypes.ITEM);
     static Logger logger = LoggerFactory.getLogger(ItemController.class);
@@ -78,16 +78,30 @@ public class ItemController extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try(Writer writer=resp.getWriter();Jsonb jsonb = JsonbBuilder.create()){
+        Jsonb jsonb = JsonbBuilder.create();
+        Writer writer = resp.getWriter();
+        StandardResponse standardResponse = null;
+        try{
             ItemDto itemDto = jsonb.fromJson(req.getReader(), ItemDto.class);
             String pathInfo = req.getPathInfo().substring(1);
-            if(itemBo.updateItem(pathInfo,itemDto)){
-                jsonb.toJson(new StandardResponse(200,"Item updated successfully",null),writer);
-            }else {
-                jsonb.toJson(new StandardResponse(404, "Item not updated", null), writer);
+            boolean isItemUpdated = itemBo.updateItem(pathInfo, itemDto);
+            if (isItemUpdated) {
+                resp.setStatus(200);
+                standardResponse = new StandardResponse(200, "Item updated successfully", null);
+            } else {
+                resp.setStatus(404);
+                standardResponse = new StandardResponse(404, "Item not updated", null);
             }
-        }catch (Exception e){
+        }catch (SQLIntegrityConstraintViolationException e){
+            resp.setStatus(403);
+            standardResponse =new StandardResponse(403,"Item name already exists..",null);
+            logger.error("Item update has failed due to an error -> "+e);
+        } catch (Exception e){
+            logger.error("Item update has failed due to an error -> "+e);
             throw new RuntimeException(e);
+        }finally {
+            jsonb.toJson(standardResponse, writer);
+            writer.close();
         }
     }
 

@@ -21,7 +21,7 @@ public class ItemDaoImpl implements ItemDao {
 
     @Override
     public boolean update(Item item) throws SQLException {
-        return SQLUtil.execute("UPDATE item SET name=?,description=?,price=?,qty=? WHERE propertyId=?",item.getName(),item.getDescription(),item.getPrice(),item.getQty(),item.getPropertyId());
+        return SQLUtil.execute("UPDATE item SET name=?,description=?,price=?,qty=? WHERE property_id=?",item.getName(),item.getDescription(),item.getPrice(),item.getQty(),item.getPropertyId());
     }
 
     @Override
