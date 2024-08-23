@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class CustomerDaoImpl implements CustomerDao {
     @Override
     public ArrayList<Customer> search(String id) throws SQLException {
-        ResultSet rs=SQLUtil.execute("SELECT * FROM customer WHERE id=?",id);
+        ResultSet rs=SQLUtil.execute("SELECT * FROM customer WHERE property_id LIKE ? OR name LIKE ? OR email LIKE ?","%" + id + "%","%" + id + "%","%" + id + "%");
         ArrayList<Customer> objects = new ArrayList<>();
         while (rs.next()){
             objects.add(new Customer(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5)));
