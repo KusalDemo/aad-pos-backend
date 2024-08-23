@@ -106,15 +106,23 @@ public class ItemController extends HttpServlet {
     }
 
     @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) {
         try(Writer writer=resp.getWriter();Jsonb jsonb = JsonbBuilder.create()){
             String pathInfo = req.getPathInfo().substring(1);
-            if(itemBo.deleteItem(pathInfo)){
-                jsonb.toJson(new StandardResponse(200,"Item deleted successfully",null),writer);
+            StandardResponse standardResponse;
+            boolean isItemDeleted = itemBo.deleteItem(pathInfo);
+            if(isItemDeleted){
+                logger.info("Item deleted successfully");
+                resp.setStatus(201);
+                standardResponse=new StandardResponse(201,"Item deleted successfully",null);
             }else {
-                jsonb.toJson(new StandardResponse(404, "Item not deleted", null), writer);
+                logger.info("Item not deleted");
+                resp.setStatus(404);
+                standardResponse=new StandardResponse(404, "Item not deleted", null);
             }
+            jsonb.toJson(standardResponse,writer);
         }catch (Exception e){
+            logger.error("Item delete has failed due to an error -> "+e);
             throw new RuntimeException(e);
         }
     }
