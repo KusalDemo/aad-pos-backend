@@ -13,7 +13,7 @@ public interface ItemBo extends SuperBO {
 
     boolean deleteItem(String id) throws SQLException;
 
-    ItemDto searchItem(String id) throws SQLException;
+    List<ItemDto> searchItem(String id) throws SQLException;
 
     List<ItemDto> getAllItems() throws SQLException;
 }

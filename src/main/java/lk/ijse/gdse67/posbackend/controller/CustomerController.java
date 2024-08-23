@@ -36,11 +36,11 @@ public class CustomerController extends HttpServlet {
             String searchedId = (pathInfo == null || pathInfo.isEmpty()) ? null : pathInfo.substring(1);
             StandardResponse standardResponse;
             if (searchedId!=null){
-                CustomerDto searchedCustomer = customerBo.searchCustomer(searchedId);
+                List<CustomerDto> searchedCustomers = customerBo.searchCustomer(searchedId);
                 Jsonb jsonb = JsonbBuilder.create();
-                if(searchedCustomer!=null){
+                if(searchedCustomers!=null){
                     response.setStatus(200);
-                    standardResponse = new StandardResponse(200,"Customer found successfully",searchedCustomer);
+                    standardResponse = new StandardResponse(200,"Customer found successfully",searchedCustomers);
                 }else{
                     response.setStatus(404);
                     standardResponse = new StandardResponse(404,"Customer not found",null);

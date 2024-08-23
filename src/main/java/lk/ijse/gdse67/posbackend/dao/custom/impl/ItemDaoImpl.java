@@ -7,11 +7,19 @@ import lk.ijse.gdse67.posbackend.entity.Item;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ItemDaoImpl implements ItemDao {
     @Override
-    public Item search(String id) throws SQLException {
-        return SQLUtil.execute("SELECT * FROM item WHERE propertyId=?",id);
+    public ArrayList<Item> search(String id) throws SQLException {
+       /* ResultSet rs = SQLUtil.execute("SELECT * FROM item WHERE property_id=? OR name=?", id,id);*/
+        ResultSet rs = SQLUtil.execute("SELECT * FROM item WHERE property_id LIKE ? OR name LIKE ?", "%" + id + "%", "%" + id + "%");
+        System.out.println(rs);
+        ArrayList<Item> obList = new ArrayList<>();
+        while (rs.next()){
+            obList.add(new Item(rs.getString(1),rs.getString(2),rs.getString(3),rs.getDouble(4),rs.getInt(5)));
+        }
+        return obList;
     }
 
     @Override

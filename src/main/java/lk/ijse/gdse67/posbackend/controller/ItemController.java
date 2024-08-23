@@ -66,13 +66,14 @@ public class ItemController extends HttpServlet {
                 logger.info("All Items retrieved successfully");
                 jsonb.toJson(new StandardResponse(200,"All Items retrieved successfully",allItems),writer);
             }else{
-                String id = pathInfo.substring(1);
-                ItemDto searchedItem = itemBo.searchItem(id);
+                String id = req.getPathInfo().substring(1);
+                System.out.println("Searched Value : "+id);
+                List<ItemDto> searchedItem = itemBo.searchItem(id);
                 logger.info("Single Item retrieved successfully");
                 jsonb.toJson(new StandardResponse(200,"Single Item retrieved successfully",searchedItem),writer);
             }
         }catch (Exception e) {
-            logger.error("Item not saved due to an error -> "+e);
+            logger.error("Items not retrieved due to an error -> "+e);
         }
     }
 

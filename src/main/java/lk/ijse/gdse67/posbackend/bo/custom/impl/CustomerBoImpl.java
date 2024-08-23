@@ -8,6 +8,7 @@ import lk.ijse.gdse67.posbackend.entity.Customer;
 import lk.ijse.gdse67.posbackend.util.IdGenerator;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerBoImpl implements CustomerBo {
@@ -28,9 +29,10 @@ public class CustomerBoImpl implements CustomerBo {
     }
 
     @Override
-    public CustomerDto searchCustomer(String id) throws SQLException {
-        Customer serachedCustomer = customerDao.search(id);
-        return new CustomerDto(serachedCustomer.getName(),serachedCustomer.getEmail(),serachedCustomer.getAddress(),serachedCustomer.getBranch());
+    public List<CustomerDto> searchCustomer(String id) throws SQLException {
+        ArrayList<Customer> searchedCustomers = customerDao.search(id);
+        List<CustomerDto> customerDtoList = searchedCustomers.stream().map(customer -> new CustomerDto(customer.getName(), customer.getEmail(), customer.getAddress(), customer.getBranch())).toList();
+        return customerDtoList;
     }
 
     @Override

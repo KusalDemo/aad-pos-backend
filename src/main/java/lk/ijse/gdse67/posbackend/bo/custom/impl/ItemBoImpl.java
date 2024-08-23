@@ -29,10 +29,11 @@ public class ItemBoImpl implements ItemBo {
     }
 
     @Override
-    public ItemDto searchItem(String id) throws SQLException {
-        Item searchedItem = itemDao.search(id);
-        ItemDto itemDto = new ItemDto(searchedItem.getPropertyId(),searchedItem.getName(),searchedItem.getDescription(),searchedItem.getPrice(),searchedItem.getQty());
-        return itemDto;
+    public List<ItemDto> searchItem(String id) throws SQLException {
+        ArrayList<Item> searchedItem = itemDao.search(id);
+        List<ItemDto> itemDtoList = searchedItem.stream().map(item ->
+                new ItemDto(item.getPropertyId(), item.getName(), item.getDescription(), item.getPrice(), item.getQty())).toList();
+        return itemDtoList;
     }
 
     @Override

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public interface CRUDDao<T> extends SuperDao {
 
-    T search(String id) throws SQLException;
+    ArrayList<T> search(String id) throws SQLException;
 
     boolean save(T t) throws SQLException, ClassNotFoundException;
 
