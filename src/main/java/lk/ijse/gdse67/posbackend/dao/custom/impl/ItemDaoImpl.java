@@ -16,7 +16,7 @@ public class ItemDaoImpl implements ItemDao {
 
     @Override
     public boolean save(Item item) throws SQLException, ClassNotFoundException {
-        return SQLUtil.execute("INSERT INTO item VALUES(?,?,?,?,?)",item.getPropertyId(),item.getName(),item.getDescription(),item,item.getPrice(),item.getQty());
+        return SQLUtil.execute("INSERT INTO item VALUES(?,?,?,?,?)",item.getPropertyId(),item.getName(),item.getDescription(),item.getPrice(),item.getQty());
     }
 
     @Override

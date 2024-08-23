@@ -5,6 +5,7 @@ import lk.ijse.gdse67.posbackend.dao.DaoFactory;
 import lk.ijse.gdse67.posbackend.dao.custom.ItemDao;
 import lk.ijse.gdse67.posbackend.dto.ItemDto;
 import lk.ijse.gdse67.posbackend.entity.Item;
+import lk.ijse.gdse67.posbackend.util.IdGenerator;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ public class ItemBoImpl implements ItemBo {
     ItemDao itemDao= (ItemDao) DaoFactory.getDaoFactory().getDao(DaoFactory.DaoFactoryTypes.ITEM);
     @Override
     public boolean saveItem(ItemDto itemDto) throws SQLException, ClassNotFoundException {
-        return itemDao.save(new Item(itemDto.getPropertyId(),itemDto.getName(),itemDto.getDescription(),itemDto.getPrice(),itemDto.getQty()));
+        return itemDao.save(new Item(IdGenerator.generateId(),itemDto.getName(),itemDto.getDescription(),itemDto.getPrice(),itemDto.getQty()));
     }
 
     @Override

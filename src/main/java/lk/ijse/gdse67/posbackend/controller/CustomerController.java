@@ -21,7 +21,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(urlPatterns = "/customer/*",loadOnStartup = 2)
+@WebServlet(urlPatterns = "/customer/*" ,loadOnStartup = 2)
 public class CustomerController extends HttpServlet {
     static Logger logger = LoggerFactory.getLogger(CustomerController.class);
     CustomerBo customerBo=(CustomerBo) BoFactory.getBoFactory().getBo(BoFactory.BoFactoryTypes.CUSTOMER);

@@ -11,40 +11,49 @@ import lk.ijse.gdse67.posbackend.bo.BoFactory;
 import lk.ijse.gdse67.posbackend.bo.custom.ItemBo;
 import lk.ijse.gdse67.posbackend.dto.ItemDto;
 import lk.ijse.gdse67.posbackend.util.StandardResponse;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
-import java.util.logging.Logger;
 
-@WebServlet(urlPatterns = "/item/*",loadOnStartup = 3)
+@WebServlet(urlPatterns = "/items",loadOnStartup = 1)
 public class ItemController extends HttpServlet {
     ItemBo itemBo= (ItemBo) BoFactory.getBoFactory().getBo(BoFactory.BoFactoryTypes.ITEM);
-    static Logger logger = (Logger) LoggerFactory.getLogger(ItemController.class);
+    static Logger logger = LoggerFactory.getLogger(ItemController.class);
     @Override
     public void init() throws ServletException {
         logger.info("Item Controller Initialized");
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try (Writer writer = resp.getWriter()) {
-            Jsonb jsonb = JsonbBuilder.create();
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        Jsonb jsonb = JsonbBuilder.create();
+        Writer writer = resp.getWriter();
+        try {
             ItemDto itemDto = jsonb.fromJson(req.getReader(), ItemDto.class);
             boolean isItemSaved = itemBo.saveItem(itemDto);
-            if(isItemSaved){
-                logger.info("Item saved successfully");
+            StandardResponse standardResponse;
+            if (isItemSaved) {
                 resp.setStatus(200);
-                jsonb.toJson(new StandardResponse(200, "Item saved successfully", null), writer);
-            }else{
+                standardResponse = new StandardResponse(200, "Item saved successfully", null);
+                logger.info("Item saved successfully");
+            } else {
+                resp.setStatus(400);
+                standardResponse = new StandardResponse(400, "Item not saved", null);
                 logger.info("Item not saved");
-                resp.setStatus(404);
-                jsonb.toJson(new StandardResponse(404, "Item not saved", null), writer);
             }
-        } catch (SQLException|ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            jsonb.toJson(standardResponse, writer);
+        }catch (SQLIntegrityConstraintViolationException e){
+            logger.error("Item not saved due to an error -> "+e);
+            resp.setStatus(403);
+            jsonb.toJson(new StandardResponse(403,"Item name already exists..",null),writer);
+        } catch (Exception e) {
+            logger.error("Item not saved due to an error -> "+e);
+        }finally {
+            writer.close();
         }
     }
 
@@ -63,7 +72,7 @@ public class ItemController extends HttpServlet {
                 jsonb.toJson(new StandardResponse(200,"Single Item retrieved successfully",searchedItem),writer);
             }
         }catch (Exception e) {
-            throw new RuntimeException(e);
+            logger.error("Item not saved due to an error -> "+e);
         }
     }
 
