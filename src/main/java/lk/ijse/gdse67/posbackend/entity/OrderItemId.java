@@ -4,6 +4,7 @@ package lk.ijse.gdse67.posbackend.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -14,6 +15,7 @@ import java.util.Objects;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class OrderItemId implements Serializable {
     @Column(name = "order_id")
     private String orderId;
