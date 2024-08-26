@@ -15,12 +15,12 @@ public class ItemBoImpl implements ItemBo {
     ItemDao itemDao= (ItemDao) DaoFactory.getDaoFactory().getDao(DaoFactory.DaoFactoryTypes.ITEM);
     @Override
     public boolean saveItem(ItemDto itemDto) throws SQLException, ClassNotFoundException {
-        return itemDao.save(new Item(IdGenerator.generateId(),itemDto.getName(),itemDto.getDescription(),itemDto.getPrice(),itemDto.getQty()));
+        return itemDao.save(new Item(IdGenerator.generateId(),itemDto.getName(),itemDto.getDescription(),itemDto.getPrice(),itemDto.getQty(),null));
     }
 
     @Override
     public boolean updateItem(String id, ItemDto itemDto) throws SQLException {
-        return itemDao.update(new Item(id,itemDto.getName(),itemDto.getDescription(),itemDto.getPrice(),itemDto.getQty()));
+        return itemDao.update(new Item(id,itemDto.getName(),itemDto.getDescription(),itemDto.getPrice(),itemDto.getQty(),null));
     }
 
     @Override

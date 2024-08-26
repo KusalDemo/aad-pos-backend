@@ -14,14 +14,22 @@ public class CustomerDaoImpl implements CustomerDao {
         ResultSet rs=SQLUtil.execute("SELECT * FROM customer WHERE property_id LIKE ? OR name LIKE ? OR email LIKE ?","%" + id + "%","%" + id + "%","%" + id + "%");
         ArrayList<Customer> objects = new ArrayList<>();
         while (rs.next()){
-            objects.add(new Customer(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5)));
+            Customer customer=Customer.builder()
+                    .propertyId(rs.getString(1))
+                    .name(rs.getString(2))
+                    .email(rs.getString(3))
+                    .address(rs.getString(4))
+                    .branch(rs.getString(5))
+                    .build();
+            objects.add(customer);
+            /*objects.add(new Customer(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5)));*/
         }
         return objects;
     }
 
     @Override
     public boolean save(Customer customer) throws SQLException {
-        return SQLUtil.execute("INSERT INTO customer VALUES(?,?,?,?,?)",customer.getPropertyId(),customer.getName(),customer.getEmail(),customer.getAddress(),customer.getBranch());
+        return SQLUtil.execute("INSERT INTO customer (property_id, name, email, address, branch) VALUES(?,?,?,?,?)",customer.getPropertyId(),customer.getName(),customer.getEmail(),customer.getAddress(),customer.getBranch());
     }
 
     @Override
@@ -39,7 +47,15 @@ public class CustomerDaoImpl implements CustomerDao {
         ResultSet rs = SQLUtil.execute("SELECT * FROM customer");
         ArrayList<Customer> obList = new ArrayList<>();
         while (rs.next()){
-            obList.add(new Customer(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5)));
+            /*obList.add(new Customer(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5)));*/
+            Customer customer=Customer.builder()
+                    .propertyId(rs.getString(1))
+                    .name(rs.getString(2))
+                    .email(rs.getString(3))
+                    .address(rs.getString(4))
+                    .branch(rs.getString(5))
+                    .build();
+            obList.add(customer);
         }
         return obList;
     }

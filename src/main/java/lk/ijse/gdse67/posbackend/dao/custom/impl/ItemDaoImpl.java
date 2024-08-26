@@ -17,14 +17,22 @@ public class ItemDaoImpl implements ItemDao {
         System.out.println(rs);
         ArrayList<Item> obList = new ArrayList<>();
         while (rs.next()){
-            obList.add(new Item(rs.getString(1),rs.getString(2),rs.getString(3),rs.getDouble(4),rs.getInt(5)));
+            /*obList.add(new Item(rs.getString(1),rs.getString(2),rs.getString(3),rs.getDouble(4),rs.getInt(5)));*/
+            Item item=Item.builder()
+                    .propertyId(rs.getString(1))
+                    .name(rs.getString(2))
+                    .description(rs.getString(3))
+                    .price(rs.getDouble(4))
+                    .qty(rs.getInt(5))
+                    .build();
+            obList.add(item);
         }
         return obList;
     }
 
     @Override
     public boolean save(Item item) throws SQLException, ClassNotFoundException {
-        return SQLUtil.execute("INSERT INTO item VALUES(?,?,?,?,?)",item.getPropertyId(),item.getName(),item.getDescription(),item.getPrice(),item.getQty());
+        return SQLUtil.execute("INSERT INTO item (property_id,name,description,price,qty) VALUES (?,?,?,?,?)",item.getPropertyId(),item.getName(),item.getDescription(),item.getPrice(),item.getQty());
     }
 
     @Override
@@ -42,7 +50,15 @@ public class ItemDaoImpl implements ItemDao {
         ResultSet rs = SQLUtil.execute("SELECT * FROM item");
         ArrayList<Item> obList = new ArrayList<>();
         while (rs.next()){
-            obList.add(new Item(rs.getString(1),rs.getString(2),rs.getString(3),rs.getDouble(4),rs.getInt(5)));
+            /*obList.add(new Item(rs.getString(1),rs.getString(2),rs.getString(3),rs.getDouble(4),rs.getInt(5)));*/
+            Item item=Item.builder()
+                    .propertyId(rs.getString(1))
+                    .name(rs.getString(2))
+                    .description(rs.getString(3))
+                    .price(rs.getDouble(4))
+                    .qty(rs.getInt(5))
+                    .build();
+            obList.add(item);
         }
         return obList;
 
