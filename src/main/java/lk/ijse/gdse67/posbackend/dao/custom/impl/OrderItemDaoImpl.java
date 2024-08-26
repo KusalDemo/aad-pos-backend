@@ -15,9 +15,14 @@ public class OrderItemDaoImpl implements OrderItemDao {
 
     @Override
     public boolean save(OrderItem orderItem) throws SQLException, ClassNotFoundException {
-        return SQLUtil.execute("insert into order_items (propertyId,order_id,item_id,itemCount,unitPrice,total) values (?,?,?,?,?,)",
-                orderItem.getPropertyId(),orderItem.getPlaceOrder().getOrderId(),orderItem.getItem().getPropertyId(),orderItem.getItemCount(),orderItem.getUnitPrice(),orderItem.getTotal());
+        return SQLUtil.execute("INSERT INTO order_items (order_id, item_id, item_count, unit_price, total) VALUES (?,?,?,?,?)",
+                orderItem.getPropertyId().getOrderId(),
+                orderItem.getPropertyId().getItemId(),
+                orderItem.getItemCount(),
+                orderItem.getUnitPrice(),
+                orderItem.getTotal());
     }
+    /*orderItem.getPropertyId().getOrderId(),orderItem.getPlaceOrder().getOrderId(),orderItem.getItem().getPropertyId(),orderItem.getItemCount(),orderItem.getUnitPrice(),orderItem.getTotal());*/
 
     @Override
     public boolean update(OrderItem orderItem) throws SQLException {

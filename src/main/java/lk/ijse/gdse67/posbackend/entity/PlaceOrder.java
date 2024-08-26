@@ -21,7 +21,7 @@ public class PlaceOrder {
     private Customer customer;
     private Date orderDate;
     private Double paid;
-    private Double discount;
+    private int discount;
     private Double balance;
 
     @OneToMany(mappedBy = "placeOrder",cascade = CascadeType.ALL,orphanRemoval = true,fetch = FetchType.EAGER)

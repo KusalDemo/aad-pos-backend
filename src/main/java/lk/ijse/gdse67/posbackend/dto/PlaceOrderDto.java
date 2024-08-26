@@ -16,7 +16,7 @@ public class PlaceOrderDto {
     private Date orderDate;
     private Double totalAmount;
     private Double paid;
-    private Double discount;
+    private int discount;
     private Double balance;
     private List<OrderItemDto> orderItems;
 }
