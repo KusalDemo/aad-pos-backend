@@ -3,7 +3,9 @@ package lk.ijse.gdse67.posbackend.dao.custom.impl;
 import lk.ijse.gdse67.posbackend.dao.SQLUtil;
 import lk.ijse.gdse67.posbackend.dao.custom.OrderItemDao;
 import lk.ijse.gdse67.posbackend.entity.OrderItem;
+import lk.ijse.gdse67.posbackend.entity.OrderItemId;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -22,8 +24,6 @@ public class OrderItemDaoImpl implements OrderItemDao {
                 orderItem.getUnitPrice(),
                 orderItem.getTotal());
     }
-    /*orderItem.getPropertyId().getOrderId(),orderItem.getPlaceOrder().getOrderId(),orderItem.getItem().getPropertyId(),orderItem.getItemCount(),orderItem.getUnitPrice(),orderItem.getTotal());*/
-
     @Override
     public boolean update(OrderItem orderItem) throws SQLException {
         return false;

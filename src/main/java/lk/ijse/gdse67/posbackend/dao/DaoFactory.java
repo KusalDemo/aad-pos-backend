@@ -28,7 +28,7 @@ public class DaoFactory {
             case ITEM:
                 return new ItemDaoImpl();
             case ORDER:
-                return new OrderDaoImpl(new CustomerDaoImpl());
+                return new OrderDaoImpl(new CustomerDaoImpl(),new ItemDaoImpl());
             case ORDER_ITEM:
                 return new OrderItemDaoImpl();
             default:

@@ -8,6 +8,7 @@ import lk.ijse.gdse67.posbackend.dao.custom.CustomerDao;
 import lk.ijse.gdse67.posbackend.dao.custom.ItemDao;
 import lk.ijse.gdse67.posbackend.dao.custom.OrderDao;
 import lk.ijse.gdse67.posbackend.dao.custom.OrderItemDao;
+import lk.ijse.gdse67.posbackend.dto.OrderItemDto;
 import lk.ijse.gdse67.posbackend.dto.PlaceOrderDto;
 import lk.ijse.gdse67.posbackend.entity.*;
 import lk.ijse.gdse67.posbackend.util.IdGenerator;
@@ -133,5 +134,26 @@ public class OrderBoImpl implements OrderBo {
                     .build());
         }
         return placeOrderDtos;
+    }
+
+    @Override
+    public List<OrderItemDto> getOrderItems(String orderId) throws SQLException {
+        try{
+            List<OrderItem> orderItems = orderDao.fetchOrderItems(orderId);
+            List<OrderItemDto> orderItemDtos = new ArrayList<>();
+            for (OrderItem orderItem : orderItems) {
+                orderItemDtos.add(OrderItemDto.builder()
+                        .orderId(orderItem.getPlaceOrder().getOrderId())
+                        .itemId(orderItem.getItem().getPropertyId())
+                        .itemCount(orderItem.getItemCount())
+                        .unitPrice(orderItem.getUnitPrice())
+                        .total(orderItem.getTotal())
+                        .build());
+            }
+            return orderItemDtos;
+        }catch (Exception e){
+            logger.error("Error while getting OrderItems : " + e);
+            return null;
+        }
     }
 }
