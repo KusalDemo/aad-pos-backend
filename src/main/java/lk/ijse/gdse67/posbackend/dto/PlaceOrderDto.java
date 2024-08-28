@@ -2,6 +2,7 @@ package lk.ijse.gdse67.posbackend.dto;
 
 import lombok.*;
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
 
@@ -10,9 +11,9 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class PlaceOrderDto {
+public class PlaceOrderDto implements Serializable {
     private String orderId;
-    private String customerId;  // Reference to customer ID
+    private String customerId;
     private Date orderDate;
     private Double totalAmount;
     private Double paid;

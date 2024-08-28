@@ -90,8 +90,8 @@ public class CustomerController extends HttpServlet {
             boolean isUpdated = customerBo.updateCustomer(searchedId,customerDto);
             StandardResponse standardResponse;
             if(isUpdated){
-                response.setStatus(201);
-                standardResponse = new StandardResponse(201,"Customer updated successfully",null);
+                response.setStatus(200);
+                standardResponse = new StandardResponse(200,"Customer updated successfully",null);
             }else{
                 response.setStatus(400);
                 standardResponse = new StandardResponse(400,"Customer update failed",null);
@@ -112,11 +112,11 @@ public class CustomerController extends HttpServlet {
             boolean isDeleted = customerBo.deleteCustomer(searchedId);
             StandardResponse standardResponse;
             if(isDeleted){
-                response.setStatus(201);
-                standardResponse = new StandardResponse(201,"Customer deleted successfully",null);
+                response.setStatus(204);
+                standardResponse = new StandardResponse(204,"Customer deleted successfully",null);
             }else{
-                response.setStatus(400);
-                standardResponse = new StandardResponse(400,"Customer delete failed",null);
+                response.setStatus(401);
+                standardResponse = new StandardResponse(401,"Customer delete failed",null);
             }
             Jsonb jsonb = JsonbBuilder.create();
             jsonb.toJson(standardResponse,writer);

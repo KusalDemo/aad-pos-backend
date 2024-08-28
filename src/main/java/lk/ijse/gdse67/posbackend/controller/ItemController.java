@@ -114,11 +114,11 @@ public class ItemController extends HttpServlet {
             boolean isItemDeleted = itemBo.deleteItem(pathInfo);
             if(isItemDeleted){
                 logger.info("Item deleted successfully");
-                resp.setStatus(201);
+                resp.setStatus(204);
                 standardResponse=new StandardResponse(201,"Item deleted successfully",null);
             }else {
                 logger.info("Item not deleted");
-                resp.setStatus(404);
+                resp.setStatus(401);
                 standardResponse=new StandardResponse(404, "Item not deleted", null);
             }
             jsonb.toJson(standardResponse,writer);
