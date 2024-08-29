@@ -3,6 +3,7 @@ package lk.ijse.gdse67.posbackend.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
 
@@ -13,7 +14,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "place_order")
-public class PlaceOrder {
+public class PlaceOrder implements Serializable {
     @Id
     private String orderId;
     @ManyToOne

@@ -3,6 +3,8 @@ package lk.ijse.gdse67.posbackend.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -10,7 +12,7 @@ import lombok.*;
 @Builder
 @Entity
 @Table(name = "order_items")
-public class OrderItem {
+public class OrderItem implements Serializable {
     @EmbeddedId
     private OrderItemId propertyId;
     @MapsId("orderId")

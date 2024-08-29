@@ -1,0 +1,1159 @@
+17:20:21.006 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+17:20:55.129 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+17:39:13.898 [http-nio-8083-exec-5] ERROR l.i.g.p.c.CustomerController -- Error while saving customer : 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'kusaljj@gmail.com' for key 'customer.email'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.save(CustomerDaoImpl.java:19)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.save(CustomerDaoImpl.java:11)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.saveCustomer(CustomerBoImpl.java:16)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doPost(CustomerController.java:54)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+17:39:21.255 [http-nio-8083-exec-7] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+20:13:49.472 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+20:14:07.989 [http-nio-8083-exec-1] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+20:18:11.532 [http-nio-8083-exec-5] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+20:18:52.525 [http-nio-8083-exec-8] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+20:21:12.144 [http-nio-8083-exec-1] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+06:23:33.986 [http-nio-8083-exec-4] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+06:35:54.320 [http-nio-8083-exec-8] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+06:39:43.255 [http-nio-8083-exec-1] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+06:43:57.556 [http-nio-8083-exec-5] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+06:45:46.123 [http-nio-8083-exec-9] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:51:57.583 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:52:19.295 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:54:49.170 [http-nio-8083-exec-5] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+16:45:55.790 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+16:46:17.406 [http-nio-8083-exec-1] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+17:01:22.501 [http-nio-8083-exec-6] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+17:01:36.504 [http-nio-8083-exec-10] ERROR l.i.g.p.c.CustomerController -- Error while updating customer : 
+java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.update(CustomerDaoImpl.java:25)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.update(CustomerDaoImpl.java:11)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.updateCustomer(CustomerBoImpl.java:22)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doPut(CustomerController.java:99)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+17:37:00.410 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+17:43:53.844 [http-nio-8083-exec-5] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+17:55:13.192 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+17:56:10.821 [http-nio-8083-exec-2] ERROR l.i.g.p.c.CustomerController -- Error while updating customer : 
+java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.update(CustomerDaoImpl.java:25)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.update(CustomerDaoImpl.java:11)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.updateCustomer(CustomerBoImpl.java:22)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doPut(CustomerController.java:99)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+17:56:29.372 [http-nio-8083-exec-4] ERROR l.i.g.p.c.CustomerController -- Error while deleting customer : 
+java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.delete(CustomerDaoImpl.java:30)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.deleteCustomer(CustomerBoImpl.java:27)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doDelete(CustomerController.java:120)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+17:58:04.841 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+17:58:14.144 [http-nio-8083-exec-2] ERROR l.i.g.p.c.CustomerController -- Error while deleting customer : 
+java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.delete(CustomerDaoImpl.java:30)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.deleteCustomer(CustomerBoImpl.java:27)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doDelete(CustomerController.java:121)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+17:59:10.923 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+17:59:21.588 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - true
+17:59:23.188 [http-nio-8083-exec-4] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - false
+17:59:46.135 [http-nio-8083-exec-6] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - true
+17:59:49.586 [http-nio-8083-exec-8] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - false
+18:00:38.713 [http-nio-8083-exec-9] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - true
+18:02:14.916 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+18:02:27.126 [http-nio-8083-exec-6] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - true
+11:51:03.205 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+11:52:19.792 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+11:52:40.224 [http-nio-8083-exec-5] ERROR l.i.g.p.c.CustomerController -- Error while updating customer : 
+java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.update(CustomerDaoImpl.java:25)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.update(CustomerDaoImpl.java:11)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.updateCustomer(CustomerBoImpl.java:22)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doPut(CustomerController.java:99)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11:58:46.839 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+11:58:59.933 [http-nio-8083-exec-1] INFO  l.i.g.p.c.CustomerController -- Customer update status : isUpdated? - true
+15:24:46.032 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+15:27:26.847 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+15:56:12.611 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+15:57:11.594 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+15:57:11.596 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+07:33:48.476 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+07:33:48.480 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+07:45:53.456 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+07:45:53.459 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+07:48:43.191 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+07:48:43.193 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+07:52:15.821 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+07:52:15.824 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+07:53:48.418 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+07:53:48.421 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+07:59:37.220 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+07:59:37.223 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:00:42.339 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:00:42.341 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:02:09.777 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:02:09.779 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:03:53.440 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:03:53.442 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:03:58.434 [http-nio-8083-exec-2] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLException: Cannot convert class lk.ijse.gdse67.posbackend.entity.Item to SQL type requested due to com.mysql.cj.exceptions.WrongArgumentException - Invalid argument value: java.io.NotSerializableException
+08:06:05.557 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:06:05.560 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:06:09.324 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+08:13:50.940 [http-nio-8083-exec-5] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'rice' for key 'item.name'
+08:35:08.945 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:35:08.948 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:35:34.895 [http-nio-8083-exec-2] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'rice' for key 'item.name'
+08:36:36.723 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+08:46:44.539 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+08:46:44.574 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:48:03.916 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+08:48:03.928 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:58:50.500 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:58:50.503 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:58:55.465 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:17:01.035 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:17:09.697 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:17:28.723 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:24:33.344 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:25:39.372 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+09:25:39.374 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+09:26:55.190 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+09:26:55.192 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+09:27:02.255 [http-nio-8083-exec-2] ERROR l.i.g.p.controller.ItemController -- Item update has failed due to an error -> java.sql.SQLSyntaxErrorException: Unknown column 'propertyId' in 'where clause'
+09:27:04.376 [http-nio-8083-exec-3] ERROR l.i.g.p.controller.ItemController -- Item update has failed due to an error -> java.sql.SQLSyntaxErrorException: Unknown column 'propertyId' in 'where clause'
+09:27:57.869 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+09:27:57.871 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+09:28:17.015 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:31:15.679 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+09:31:15.682 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+09:31:25.587 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:33:29.197 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:33:39.252 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:34:42.830 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:34:46.876 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:36:47.988 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+09:36:47.991 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+09:37:39.633 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:37:46.031 [http-nio-8083-exec-3] ERROR l.i.g.p.controller.ItemController -- Item update has failed due to an error -> java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'rice8' for key 'item.name'
+09:39:40.015 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:39:43.965 [http-nio-8083-exec-8] ERROR l.i.g.p.controller.ItemController -- Item update has failed due to an error -> java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'rice8' for key 'item.name'
+09:42:19.485 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+09:42:19.487 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+09:42:24.897 [http-nio-8083-exec-2] ERROR l.i.g.p.controller.ItemController -- Item update has failed due to an error -> java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'rice8' for key 'item.name'
+09:42:31.746 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:58:32.782 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+09:58:32.785 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:07:32.070 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:09:46.972 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+10:09:46.976 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:09:56.033 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+10:09:58.113 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- Item not deleted
+10:11:46.533 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+10:11:46.536 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:11:53.049 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item not deleted
+10:13:27.274 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+10:13:27.276 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:13:31.378 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item not deleted
+10:14:29.303 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:14:41.399 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+10:14:44.471 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:20:22.575 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+10:20:22.578 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:20:30.913 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+10:20:34.458 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:20:49.647 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+10:20:49.649 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:20:57.590 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+10:21:02.499 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:21:57.996 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+10:21:57.999 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:22:11.302 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+10:22:11.327 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:22:19.936 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:22:26.118 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+10:22:30.481 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:22:45.842 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+10:22:45.844 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:22:52.226 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+10:22:52.241 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+10:22:57.115 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+10:22:57.133 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:33:37.926 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+12:33:37.929 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+12:36:53.144 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+12:36:53.147 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:25:56.755 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:25:56.758 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:26:04.350 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:05.412 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:06.081 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:06.248 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:06.425 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:06.614 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:06.791 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:06.958 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:07.127 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:07.294 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:07.477 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:26:07.745 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:28:14.700 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:28:15.551 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:28:15.760 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:28:15.969 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:28:24.593 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+13:28:24.601 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:28:40.840 [http-nio-8083-exec-1] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLException: No value specified for parameter 2
+13:28:41.765 [http-nio-8083-exec-2] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLException: No value specified for parameter 2
+13:28:42.231 [http-nio-8083-exec-3] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLException: No value specified for parameter 2
+13:44:42.483 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:44:42.486 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:44:48.121 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:44:55.993 [http-nio-8083-exec-3] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLException: No value specified for parameter 2
+13:47:32.997 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:47:33.000 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:47:40.552 [http-nio-8083-exec-1] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLException: No value specified for parameter 2
+13:49:54.462 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:49:54.465 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:50:00.834 [http-nio-8083-exec-1] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.lang.NullPointerException: Cannot invoke "String.substring(int)" because the return value of "jakarta.servlet.http.HttpServletRequest.getPathInfo()" is null
+13:50:03.679 [http-nio-8083-exec-2] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.lang.NullPointerException: Cannot invoke "String.substring(int)" because the return value of "jakarta.servlet.http.HttpServletRequest.getPathInfo()" is null
+13:57:58.104 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:57:58.106 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:58:04.610 [http-nio-8083-exec-1] ERROR l.i.g.p.controller.ItemController -- Items not retrieved due to an error -> java.lang.NullPointerException: Cannot invoke "String.substring(int)" because the return value of "jakarta.servlet.http.HttpServletRequest.getPathInfo()" is null
+13:59:20.130 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:59:20.132 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:59:24.204 [http-nio-8083-exec-1] ERROR l.i.g.p.controller.ItemController -- Items not retrieved due to an error -> java.lang.NullPointerException: Cannot invoke "String.substring(int)" because the return value of "jakarta.servlet.http.HttpServletRequest.getPathInfo()" is null
+14:01:29.395 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+14:01:29.398 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+14:01:37.155 [http-nio-8083-exec-1] ERROR l.i.g.p.controller.ItemController -- Items not retrieved due to an error -> java.lang.NullPointerException: Cannot invoke "String.substring(int)" because the return value of "jakarta.servlet.http.HttpServletRequest.getPathInfo()" is null
+14:01:38.749 [http-nio-8083-exec-2] ERROR l.i.g.p.controller.ItemController -- Items not retrieved due to an error -> java.lang.NullPointerException: Cannot invoke "String.substring(int)" because the return value of "jakarta.servlet.http.HttpServletRequest.getPathInfo()" is null
+14:10:57.805 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+14:10:57.808 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+14:13:09.140 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+14:13:09.142 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+14:13:13.818 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+14:13:21.524 [http-nio-8083-exec-3] ERROR l.i.g.p.controller.ItemController -- Item not saved due to an error -> java.sql.SQLException: No value specified for parameter 2
+14:15:35.072 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+14:15:35.075 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+14:15:40.520 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+14:15:43.140 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:19:17.796 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+14:19:17.798 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+14:19:31.321 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+14:19:31.340 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+14:19:36.747 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:20:31.003 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+14:20:34.819 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:20:40.988 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:22:36.079 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+14:22:36.081 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+14:22:40.164 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+14:22:42.242 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:25:47.447 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+14:25:54.669 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:26:17.590 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:28:44.108 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:28:50.093 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+14:48:29.117 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+14:48:29.120 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+14:56:41.798 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+14:56:50.145 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+14:56:50.152 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:39:03.655 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+17:39:03.658 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+18:05:10.248 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+18:05:10.250 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+18:10:58.441 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:10:59.269 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:11:00.356 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:24:50.778 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:24:51.741 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:24:52.303 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:24:53.420 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:27:18.292 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:27:19.273 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:27:20.413 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+18:27:40.953 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+18:27:40.976 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:26.191 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:27.484 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:27.926 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:28.981 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:29.518 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:29.713 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:29.858 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:30.356 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:30.894 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:54.296 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:00:57.769 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+19:03:38.016 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:19:37.523 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:19:43.568 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:19:51.172 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:19:56.571 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:20:02.634 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:21:41.547 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:22:11.474 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:53:54.063 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:55:02.080 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:55:05.484 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:55:09.444 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+19:56:00.237 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:56:03.038 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+19:57:26.179 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+19:57:29.183 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+19:57:46.201 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:15:44.054 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+07:15:44.057 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+07:16:16.154 [http-nio-8083-exec-1] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+07:17:41.131 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+07:17:41.146 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:02:41.047 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:02:41.052 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:03:05.140 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+08:03:05.216 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:04:19.569 [http-nio-8083-exec-5] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:06:17.535 [http-nio-8083-exec-8] ERROR l.i.g.p.c.CustomerController -- Error while saving customer : 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'buwa@gmail.com' for key 'customer.email'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.save(CustomerDaoImpl.java:32)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.save(CustomerDaoImpl.java:11)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.saveCustomer(CustomerBoImpl.java:18)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doPost(CustomerController.java:66)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+08:06:34.013 [http-nio-8083-exec-10] ERROR l.i.g.p.c.CustomerController -- Error while saving customer : 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'buwa@gmail.com' for key 'customer.email'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.save(CustomerDaoImpl.java:32)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.save(CustomerDaoImpl.java:11)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.saveCustomer(CustomerBoImpl.java:18)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doPost(CustomerController.java:66)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+08:06:39.482 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:07:20.882 [http-nio-8083-exec-5] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:09:05.263 [http-nio-8083-exec-9] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:11:54.230 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:12:08.047 [http-nio-8083-exec-5] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:13:18.122 [http-nio-8083-exec-8] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:13:26.440 [http-nio-8083-exec-2] ERROR l.i.g.p.c.CustomerController -- Error while saving customer : 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'kusalvbvb@gmail.com' for key 'customer.email'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.gdse67.posbackend.dao.SQLUtil.execute(SQLUtil.java:33)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.save(CustomerDaoImpl.java:32)
+	at lk.ijse.gdse67.posbackend.dao.custom.impl.CustomerDaoImpl.save(CustomerDaoImpl.java:11)
+	at lk.ijse.gdse67.posbackend.bo.custom.impl.CustomerBoImpl.saveCustomer(CustomerBoImpl.java:18)
+	at lk.ijse.gdse67.posbackend.controller.CustomerController.doPost(CustomerController.java:66)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at lk.ijse.gdse67.posbackend.filter.CORSFilter.doFilter(CORSFilter.java:25)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+08:13:31.205 [http-nio-8083-exec-3] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:14:11.496 [http-nio-8083-exec-7] INFO  l.i.g.p.c.CustomerController -- Customer update status : isUpdated? - false
+08:14:21.925 [http-nio-8083-exec-9] INFO  l.i.g.p.c.CustomerController -- Customer update status : isUpdated? - true
+08:14:44.303 [http-nio-8083-exec-3] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+08:15:10.422 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+08:15:10.430 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:15:18.332 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:20:09.544 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:21:31.545 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:21:34.800 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+09:40:23.735 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:40:27.863 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+09:40:43.024 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:40:47.467 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+09:53:31.651 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:53:35.925 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:53:39.915 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+09:54:34.878 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+09:54:37.391 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:07:24.552 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+12:07:24.556 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+12:07:35.590 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:07:38.331 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:08:43.680 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:09:01.658 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:09:04.868 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:10:06.480 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:10:09.415 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:14:26.219 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:14:29.686 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:14:39.229 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:14:42.387 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:14:59.462 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:15:02.288 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:27:29.411 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:27:37.341 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:27:40.288 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:56:10.455 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+12:56:10.458 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+12:57:44.040 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:57:47.053 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:57:52.713 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:57:57.456 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+12:58:25.510 [http-nio-8083-exec-2] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while saving OrderItems : java.sql.SQLException: Parameter index out of range (6 > number of parameters, which is 5).
+12:58:25.511 [http-nio-8083-exec-2] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while Placing an Order : java.lang.RuntimeException: java.sql.SQLException: Parameter index out of range (6 > number of parameters, which is 5).
+12:58:25.538 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:15:53.839 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:15:53.848 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:16:29.553 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:16:29.559 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:17:10.345 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:17:14.435 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:17:40.432 [http-nio-8083-exec-9] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while Placing an Order : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+13:17:40.451 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:19:51.578 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:19:51.584 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:20:13.095 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:20:17.523 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:20:49.053 [http-nio-8083-exec-9] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while Placing an Order : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+13:20:49.067 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:38:33.840 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:38:33.844 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:38:55.508 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:38:58.702 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:43:22.723 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:43:22.727 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:43:44.372 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:43:46.673 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:43:52.070 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:43:54.918 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:49:00.513 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:49:00.518 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:49:41.115 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:49:44.282 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:49:53.495 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:49:56.167 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:49:59.340 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:50:17.201 [http-nio-8083-exec-3] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while Placing an Order : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+13:50:17.222 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:58:41.572 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:58:41.578 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:58:55.522 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+13:58:58.767 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+13:59:16.782 [http-nio-8083-exec-8] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while saving OrderItems : java.sql.SQLException: Parameter index out of range (6 > number of parameters, which is 5).
+13:59:16.783 [http-nio-8083-exec-8] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while Placing an Order : java.lang.RuntimeException: java.sql.SQLException: Parameter index out of range (6 > number of parameters, which is 5).
+13:59:16.817 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:16:59.865 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+16:16:59.884 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+16:17:15.926 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:17:19.429 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+16:17:37.318 [http-nio-8083-exec-7] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while saving OrderItems : java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+16:17:37.319 [http-nio-8083-exec-7] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while Placing an Order : java.lang.RuntimeException: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+16:17:37.340 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:26:34.748 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+16:26:34.751 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+16:26:52.928 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:26:56.060 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+16:27:12.536 [http-nio-8083-exec-8] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while saving OrderItems : java.sql.SQLSyntaxErrorException: Unknown column 'itemCount' in 'field list'
+16:27:12.537 [http-nio-8083-exec-8] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while Placing an Order : java.lang.RuntimeException: java.sql.SQLSyntaxErrorException: Unknown column 'itemCount' in 'field list'
+16:27:12.563 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:28:47.545 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+16:28:47.548 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+16:29:21.997 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+16:29:22.000 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+16:29:42.729 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:29:44.299 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:29:47.245 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+16:30:10.160 [http-nio-8083-exec-10] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while saving OrderItems : java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`aadjavaeepos`.`order_items`, CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `place_order` (`orderId`) ON DELETE CASCADE)
+16:30:10.160 [http-nio-8083-exec-10] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while Placing an Order : java.lang.RuntimeException: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`aadjavaeepos`.`order_items`, CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `place_order` (`orderId`) ON DELETE CASCADE)
+16:30:10.188 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:40:18.625 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+16:40:18.628 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+16:40:34.214 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+16:40:37.206 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+16:40:53.775 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:02:25.829 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+17:02:25.832 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+17:02:41.431 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:02:46.010 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:03:03.761 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:03:06.605 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:03:19.004 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:03:22.810 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:03:27.027 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:03:33.648 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:03:36.681 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:04:48.961 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:04:52.357 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:23:26.271 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+17:23:26.274 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+17:23:41.100 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:23:44.154 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:25:35.752 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+17:25:35.755 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+17:25:48.251 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:25:50.566 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:26:01.644 [http-nio-8083-exec-7] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+17:26:01.670 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:26:16.464 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:26:18.936 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:26:24.765 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:26:27.377 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:26:53.304 [http-nio-8083-exec-3] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+17:26:53.326 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:35:57.044 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:35:59.932 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:36:36.414 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:36:38.520 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:37:34.327 [http-nio-8083-exec-3] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+17:37:34.355 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:49:06.494 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+17:49:06.498 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+17:49:41.736 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:49:43.887 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+17:49:56.418 [http-nio-8083-exec-8] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+17:49:56.437 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:50:08.011 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:50:11.746 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+19:58:40.323 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+19:58:40.326 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+22:49:40.095 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+22:49:40.098 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+22:57:01.187 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+22:57:01.190 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+22:58:58.686 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+22:58:58.690 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+23:03:14.255 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+23:03:14.258 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+23:10:26.361 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+23:10:26.366 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+23:10:59.111 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+23:11:02.480 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+23:11:47.667 [http-nio-8083-exec-4] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+23:11:47.694 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+23:12:53.786 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+23:12:58.836 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+23:13:33.725 [http-nio-8083-exec-8] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+23:13:33.746 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:18:15.825 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+12:18:15.828 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+12:18:48.498 [http-nio-8083-exec-3] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+12:35:30.438 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+12:35:30.442 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+12:35:40.883 [http-nio-8083-exec-2] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+20:09:31.445 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+20:09:31.450 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+20:12:43.178 [http-nio-8083-exec-3] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+21:09:34.129 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:09:34.132 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:09:49.187 [http-nio-8083-exec-2] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+21:13:05.857 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:13:05.859 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:13:17.044 [http-nio-8083-exec-3] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+21:24:33.518 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:24:33.522 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:25:47.998 [http-nio-8083-exec-2] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.sql.SQLException: Error while fetching order items (Dao) : 
+21:30:31.444 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:30:31.448 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:30:43.654 [http-nio-8083-exec-2] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.sql.SQLException: Error while fetching order items (Dao) : 
+21:35:06.411 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:35:06.416 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:35:27.041 [http-nio-8083-exec-3] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.Item.getPropertyId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getItem()" is null
+21:38:15.993 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:38:15.996 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:38:24.777 [http-nio-8083-exec-1] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.Item.getPropertyId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getItem()" is null
+21:49:52.409 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:49:52.412 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:51:08.943 [http-nio-8083-exec-1] ERROR l.i.g.p.bo.custom.impl.OrderBoImpl -- Error while getting OrderItems : java.lang.NullPointerException: Cannot invoke "lk.ijse.gdse67.posbackend.entity.PlaceOrder.getOrderId()" because the return value of "lk.ijse.gdse67.posbackend.entity.OrderItem.getPlaceOrder()" is null
+21:55:44.361 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:55:44.364 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+22:48:31.338 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+22:48:31.381 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+22:50:24.130 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:21:39.989 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+07:21:39.996 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+07:21:48.101 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:23:27.175 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:24:05.769 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:39:08.286 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:42:04.471 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:43:05.394 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:43:15.521 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:44:16.713 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:46:02.110 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:47:18.139 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:48:37.275 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:49:33.257 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:52:23.890 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:52:51.925 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:53:01.852 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:53:27.781 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:54:17.145 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:54:19.243 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:54:21.711 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+07:54:30.227 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:54:33.015 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+07:55:00.344 [http-nio-8083-exec-10] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+07:55:00.362 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:55:38.565 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:56:40.935 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:56:51.433 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:57:06.310 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:59:00.506 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+07:59:51.320 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:01:06.611 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:08:45.804 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:08:51.325 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:08:58.225 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:10:52.235 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:10:57.813 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:11:00.883 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:11:24.251 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:11:28.802 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:11:31.819 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:12:30.565 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:12:35.793 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:12:39.092 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:14:50.408 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:14:54.839 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:14:57.027 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:15:39.842 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:15:44.583 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:15:46.659 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:16:05.849 [http-nio-8083-exec-5] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+08:16:05.875 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:16:10.616 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:28:47.170 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:35:34.878 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:36:01.952 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:36:06.305 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:36:22.952 [http-nio-8083-exec-3] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+08:36:22.991 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:36:31.134 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:36:33.524 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:36:40.836 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:36:43.855 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:36:53.898 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:36:56.598 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+08:37:16.313 [http-nio-8083-exec-4] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+08:37:16.327 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:37:23.559 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+08:49:51.557 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:49:51.559 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+08:53:16.188 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+08:53:16.192 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+10:40:09.323 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+10:40:09.326 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+11:16:15.328 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:18:40.191 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:41:18.562 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+11:41:18.564 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+11:41:24.395 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:45:30.797 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:46:12.898 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:47:42.824 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:47:49.060 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:47:52.558 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:55:37.959 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:55:52.872 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:55:55.747 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+11:56:10.797 [http-nio-8083-exec-8] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+11:56:10.821 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+11:56:17.027 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:01:14.509 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:02:21.364 [http-nio-8083-exec-1] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+12:07:39.990 [http-nio-8083-exec-2] INFO  l.i.g.p.c.CustomerController -- Customer update status : isUpdated? - true
+12:08:40.737 [http-nio-8083-exec-9] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - true
+12:11:33.063 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+12:14:26.862 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+13:40:23.875 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+13:40:23.879 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+13:49:55.846 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+15:04:15.289 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+15:21:13.468 [http-nio-8083-exec-1] INFO  l.i.g.p.bo.custom.impl.OrderBoImpl -- Transaction has been successful - Order Placed Successfully
+15:48:57.349 [http-nio-8083-exec-9] INFO  l.i.g.p.c.CustomerController -- Customer saving status : isSaved? - true
+15:58:18.400 [http-nio-8083-exec-6] INFO  l.i.g.p.c.CustomerController -- Customer update status : isUpdated? - true
+16:00:24.591 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+16:00:24.593 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+16:00:41.086 [http-nio-8083-exec-1] INFO  l.i.g.p.c.CustomerController -- Customer update status : isUpdated? - true
+16:02:41.311 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+16:02:41.313 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+16:05:12.024 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- Item saved successfully
+16:13:55.903 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+17:21:04.020 [http-nio-8083-exec-7] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - false
+17:21:10.667 [http-nio-8083-exec-8] INFO  l.i.g.p.c.CustomerController -- Customer delete status : isDeleted? - true
+17:56:43.300 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- Item deleted successfully
+18:38:36.608 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+18:39:11.582 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- Single Item retrieved successfully
+21:37:47.764 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:37:47.769 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:43:12.953 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:13.052 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:13.344 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:13.852 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:14.349 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:14.850 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:15.351 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:15.852 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:16.350 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:16.847 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:17.350 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:17.849 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:18.358 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:18.848 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:19.346 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:19.848 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:20.346 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:20.850 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:21.349 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:21.848 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:22.348 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:22.848 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:23.347 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:23.844 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:24.347 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:24.847 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:25.348 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:25.848 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:26.347 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:26.845 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:27.352 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:27.847 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:28.349 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:28.848 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:29.346 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:29.842 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:30.349 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:30.839 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:31.341 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:31.840 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:32.340 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:32.842 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:33.345 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:33.846 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:34.346 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:34.846 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:35.348 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:35.847 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:36.348 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:36.843 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:37.348 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:37.847 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:38.347 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:38.846 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:39.345 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:39.848 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:40.352 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:40.845 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:41.347 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:41.844 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:42.347 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:42.846 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:43.346 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:43.847 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:44.345 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:44.845 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:45.345 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:45.845 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:46.345 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:46.846 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:47.350 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:47.845 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:48.346 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:48.840 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:49.344 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:49.845 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:50.345 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:50.842 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:51.347 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:51.843 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:52.339 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:52.843 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:53.346 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:53.841 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:54.344 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:54.838 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:55.345 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:55.840 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:56.345 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:56.845 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:57.344 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:57.845 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:58.345 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:58.845 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:59.372 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:43:59.851 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:00.362 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:00.876 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:01.345 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:01.844 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:02.345 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:02.846 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:03.343 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:03.845 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:04.342 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:04.844 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:05.345 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:05.845 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:06.341 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:06.840 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:07.349 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:07.843 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:08.340 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:08.843 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:09.341 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:09.839 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:10.341 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:10.843 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:11.346 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:11.844 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:12.345 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:12.836 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:13.342 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:13.906 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:15.112 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:16.110 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:17.105 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:18.110 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:19.128 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:20.108 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:21.108 [http-nio-8083-exec-8] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:22.109 [http-nio-8083-exec-1] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:23.105 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:24.114 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:25.128 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:26.110 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:27.107 [http-nio-8083-exec-7] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:28.146 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:29.124 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:30.116 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:31.104 [http-nio-8083-exec-10] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:32.106 [http-nio-8083-exec-4] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:33.108 [http-nio-8083-exec-6] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:34.109 [http-nio-8083-exec-9] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:35.114 [http-nio-8083-exec-3] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:44:36.128 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:53:07.455 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:53:07.457 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:53:13.731 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:53:13.766 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:55:32.193 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.controller.ItemController -- Item Controller Initialized
+21:55:32.195 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.g.p.c.CustomerController -- Customer Controller Initialized
+21:56:40.988 [http-nio-8083-exec-2] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully
+21:56:41.034 [http-nio-8083-exec-5] INFO  l.i.g.p.controller.ItemController -- All Items retrieved successfully

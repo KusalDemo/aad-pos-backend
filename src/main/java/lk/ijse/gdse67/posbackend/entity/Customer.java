@@ -3,6 +3,7 @@ package lk.ijse.gdse67.posbackend.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Getter
@@ -12,7 +13,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "customer")
-public class Customer {
+public class Customer implements Serializable {
     @Id
     @Column(name = "property_id")
     private String propertyId;
